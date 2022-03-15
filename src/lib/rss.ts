@@ -16,7 +16,8 @@ export const FEEDS = [
     {
         slug: "e24",
         title: "E24",
-        url: "https://e24.no/rss2/"
+        url: "https://e24.no/rss2/",
+        logo: "/e24logo.png"
     }
 ];
 
