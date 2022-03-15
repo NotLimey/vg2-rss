@@ -42,14 +42,14 @@ export default function Feed({ feed, items }: any) {
                     </a>
                   </div>
                 </div>
-                
+                {item.isoDate &&
                 <div className="mt-2 mb-3 flex items-center">
                   <div className="ml-3">
                     <div className="flex space-x-1 text-sm text-gray-500">
                       <time dateTime={format(new Date(item.isoDate), "PPP")}>{formatDistance(new Date(item.isoDate), new Date())} ago</time>
                     </div>
                   </div>
-                </div>
+                </div>}
               </div>
         )})}
       </div>

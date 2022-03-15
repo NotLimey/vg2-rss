@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         {FEEDS.map((feed) => (
           <Link key={feed.slug} href={`/feeds/${feed.slug}`}>
             <a className="p-4 border border-gray-200 hover:border-gray-500 rounded-lg">
-              {feed.title}
+              {feed.logo ? <img className='h-6 mx-auto' src={feed.logo} alt="" /> : feed.title}
             </a>
           </Link>
         ))}
